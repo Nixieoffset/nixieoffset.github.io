@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400i,500i,600i,700i&subset=latin-ext');
+
+#page-wrap {
+     width: 800px;
+     margin: 1 auto;
+     background-color: hex("#020406")
+}
+
+p, h1, h2, h3, h4, h5, h6 {font-family: 'Raleway', sans-serif;}
+i {font-family: 'Raleway', sans-serif;font-style: italic;}
+body {background-image: url("../bg.jpg";background-attachment: fixed;}
