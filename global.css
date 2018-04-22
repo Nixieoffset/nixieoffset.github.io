@@ -4,9 +4,9 @@
 #page-wrap {
      width: 75%;
      margin: 1 auto;
-     background-color: #060402
+     background-color: #280202
 }
 
-p, h1, h2, h3, h4, h5, h6 {font-family: 'Raleway', sans-serif;color: firebrick)}
-i {font-family: 'Raleway', sans-serif;font-style: italic;color: firebrick}
+p, h1, h2, h3, h4, h5, h6 {font-family: 'Raleway', sans-serif;color: firebrick;}
+i {font-family: 'Raleway', sans-serif;font-style: italic;color: firebrick;}
 body {background-image: url("img/bg.jpg");background-attachment: fixed;}
