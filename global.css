@@ -2,11 +2,11 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400i,500i,600i,700i&subset=latin-ext');
 
 #page-wrap {
-     width: 800px;
+     width: 75%;
      margin: 1 auto;
-     background-color: hex("#020406")
+     background-color: #060402
 }
 
-p, h1, h2, h3, h4, h5, h6 {font-family: 'Raleway', sans-serif;}
-i {font-family: 'Raleway', sans-serif;font-style: italic;}
-body {background-image: url("../bg.jpg");background-attachment: fixed;}
+p, h1, h2, h3, h4, h5, h6 {font-family: 'Raleway', sans-serif;color: #f20000)}
+i {font-family: 'Raleway', sans-serif;font-style: italic;color:#f20000}
+body {background-image: url("/bg.jpg");background-attachment: fixed;}
