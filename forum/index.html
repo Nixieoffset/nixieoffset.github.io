@@ -64,6 +64,7 @@
         <h3>New topic</h3>
       </div>
       <div class="modal-body"><form id="form">
+	      <h4>Section</h4>
       <select required class="form-control" id="sect" name="Section" >
   <option disabled value="1">Announcements</option>    
   <option value="2">Discussions</option>
@@ -71,7 +72,9 @@
   <option value="4">Bugs</option>
   <option value="17">Other</option>
      </select>
+	      <h4>Topic ID <sup>(number from -256 to 16777216)</sup></h4>
   <input type="integer" class="form-control" name="ID" placeholder="ID" min="-256" max="16777216" value="" id="id_number" required>
+	      <p>Two notes: when you create a topic, you must go in the respective section and post your topic's link and title <sup>(required)</sup> and you should PM an admin to make OP of your topic at the top.</p>
   <hr>
   <button role="button" class="btn btn-primary" type="submit" id="button">Create</button>
 </form>
