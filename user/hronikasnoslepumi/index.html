@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css" rel="stylesheet">
+	
+	<!--[if lt IE 9]><script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script><script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+<body>
+	<div class="modal-backdrop in"></div>
+
+<div class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="channelModal" style="display:block;">
+
+    <div class="modal-dialog modal-lg" role="document">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h2 class="modal-title" id="channelModal">Piekļuve</h2>
+
+            </div>
+
+            <div class="modal-body" style="">
+ <form>
+ <script type="text/javascript">
+    function goToPage() {
+        var s = document.getElementById('scene').value;
+        var tk = document.getElementById('take').value;
+        var t = document.getElementById('type').value;
+        var p = document.getElementById('passe').value;
+        window.location = "http://nixieoffset.zfc.id.lv/user/hronikasnoslepumi/index.html#" + s + "." + tk +"." + t + "." + p;
+    }
+</script>
+<table>
+    <tr>
+        <td><select id="scene" class="form-control">
+      <optgroup label="Aina"></optgroup>
+      <option value="s0"></option>
+      <option value="s1">s1</option>
+      <option value="s2">s2</option>
+      <option value="s3">s3</option>
+      <option value="s4">s4</option>
+      <option value="s5">s5</option>
+      <option value="s6">s6</option>
+      <option value="s7">s7</option>
+      <option value="s8">s8</option>
+          </select></td>
+        <td><select id="take" class="form-control">
+     <optgroup label="Dublis"></optgroup>
+      <option></option>
+      <option value="t1">t1</option>
+      <option value="t2">t2</option>
+      <option value="t3">t3</option>
+      <option value="t4">t4</option>
+      <option value="t5">t5</option>
+      <option value="t6">t6</option>
+	  <option value="t7">t7</option>
+          </select></td>
+        <td><select id="type" class="form-control">
+      <optgroup label="Tips"></optgroup>
+      <option></option>
+      <option value="vid">vid</option>
+      <option value="inf">inf</option>
+      <option value="snd">snd</option>
+          </select></td>
+        <td><input id="passe" placeholder="Parole" class="form-control" /></td>
+      <td><button class="btn-success form-control" type="submit" name="" value="submit" onclick="goToPage();" ><div class="glyphicon glyphicon-ok"></div></button></td>
+    </tr>
+</table>
+              </form>
+              </div>
+
+            </div>
+             <div class="modal-footer" style="">
+
+                (c) Daniels Šimaņecs, Mārcis Kristaps Lemes 2018
+
+            </div>
+
+        </div>
+
+    </div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+</body>
+</html>
