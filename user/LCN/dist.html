@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css" rel="stylesheet">
+	<style>body{background-color: #0e242d;}</style>
+	<!--[if lt IE 9]><script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script><script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+<body>
+	<div class="modal-backdrop in"></div>
+
+<div class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="channelModal" style="display:block;">
+
+    <div class="modal-dialog modal-lg" role="document">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h2 class="modal-title" id="channelModal">Piekļuve</h2>
+
+            </div>
+
+            <div class="modal-body" style="">
+
+ <script type="text/javascript">
+    function goToPage() {
+        var s = document.getElementById('scene').value;
+        var tk = document.getElementById('take').value;
+        var t = document.getElementById('type').value;
+        var p = document.getElementById('passe').value;
+        window.location = "http://nixieoffset.zfc.id.lv/user/LCN/dist/" + s + "." + tk +"." + t + "." + p;
+    }
+</script>
+<table>
+    <tr>
+        <td><select id="scene" class="form-control">
+      <optgroup label="Rīks"></optgroup>
+      <option></option>
+      <option value="lcn">lcn</option>
+      <option value="syreval">syreval</option>
+          </select></td>
+        <td><select id="take" class="form-control">
+     <optgroup label="Versija"></optgroup>
+      <option></option>
+      <option value="28_1">v.b28.1</option>
+      <option value="29">v.b29</option>
+      <option value="31">v.b31</option>
+      <option value="31_1">v.b31.1</option>
+      <option value="31_2">v.b31.2</option>
+      <option value="32">v.b32</option>
+      <option value="33">v.b33</option>
+      <option value="33_1">v.b33.1</option>
+      <option value="34">v.b34</option>
+	  <option value="35">v.b35</option>
+	  <option value="36">v.b36</option>
+	  <option value="37">v.b37</option>
+          </select></td>
+        <td><select id="type" class="form-control">
+      <optgroup label="Tips"></optgroup>
+      <option></option>
+      <option value="Ertyezz">Ertyezz#9819</option>
+      <option value="Sanija">Sanija#1187</option>
+          </select></td>
+        <td><input id="passe" placeholder="Parole" class="form-control" /></td>
+      <td><button class="btn-success form-control" type="submit" name="" value="submit" onclick="goToPage();" ><div class="glyphicon glyphicon-ok"></div></button></td>
+    </tr>
+</table>
+
+              </div>
+
+            </div>
+             <div class="modal-footer" style="">
+
+                Šis saturs ir paredzēts cilts La Cros Nostra personālam.
+
+            </div>
+
+        </div>
+
+    </div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+</body>
+</html>
