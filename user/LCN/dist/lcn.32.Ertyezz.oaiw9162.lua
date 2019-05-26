@@ -1,4 +1,4 @@
-<pre>&lt;pre&gt;
+
 -- "Vēsture" [[v1 - oriģināls|v2 - survival sakne|v3 - !spawn koordinātu pieejamība|v4 - !bc, !bc*, !utilcore, !utilcore*|v5 - survival pabeigts|v6 - beznaglu sakne|v7 - !r, !r*|v8 - ne-dalībnieku blokāde|v9 - kļūdu reorganizācija|v10 - !md|v11 - !md*|v12 - !cname, !host, !kill|v13 - !txt, !g|v14 - utilcore palaidējs|v15 - !txt*|v16 - !rhost|v17 - !g*|v18 - !col|v19 - !s*|v20 - !cmode, !size|v21 - !ce,!ce*|v22 - !np|v23 - !meep|v24 - !rmtxt|v25 - !score, all: !s, !kill, !r, !meep, !ce|v26 - jauns interfeiss; !tfm, !tfm*, !link, !link*|v27 - all: !tfm; !hlp kodols|v28 - !hlp uzlabojumi; atjaunināts survival|v29 - !nextmap survival režīmā automātiski parāda raunda ciparu|v30 - karte pagarinās build režīmā atbilstoši spēlētaju skaitam, !clear|v.b32 - HostCore (!hc); 30-sek. challenge kodols; everyoneVerified; !d]]
  
 SETUP = {flymode = false,challengemode = "thirty",autorespawn = "true",everyoneVerified="true"}
@@ -549,4 +549,3 @@ function eventTextAreaCallback(textAreaID, playerName, callback)
 		ui.updateTextArea(3504, "<ROSE><font size='13'><b>!np</b></font><BL> <a href='event:hlp.var_npcode'>[kods]</a><N>\n<b>Darbība:</b> Pārslēdz mapi. <A:ACTIVE> <font size='0'>Ja pieliek *, tad siers tiek atņemts.</font> <N>\n<b>Piekļuve:</b> <R>Host</R>",playerName)
 	end
 end
-&lt;/pre&gt;</pre>
