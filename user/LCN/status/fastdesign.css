@@ -161,4 +161,14 @@
 	top:1px;
 }
 
-.cl {column-count: 3;  column-width: 30%;column-gap: 3.33%;}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
