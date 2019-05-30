@@ -163,10 +163,10 @@
 
 .column {
   float: left;
-  width: 33.33%;
-  padding: 5px;
+  width: 100%;
+  padding: 40px;
 }
-
+.row {padding: 5px;}
 .row::after {
   content: "";
   clear: both;
