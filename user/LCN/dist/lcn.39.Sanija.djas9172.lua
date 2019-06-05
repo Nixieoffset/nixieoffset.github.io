@@ -8,7 +8,7 @@ SETUP = {flymode = false,challengemode = "build",autorespawn = "true",everyoneVe
 version = "v.b39"
 title = "#LaChallengeNostra "..SETUP.challengemode
 player={} helpers={}
-hosts={['Syrius#8114'] = true,['Martasislova#0000'] = true} --,['Ertyezz#9819'] = true  ,['Laimesberns#3746'] = true
+hosts={['Syrius#8114'] = true,['Sanija#1187'] = true} --,['Ertyezz#9819'] = true  ,['Laimesberns#3746'] = true
 contestants={}
 userData={}
  
