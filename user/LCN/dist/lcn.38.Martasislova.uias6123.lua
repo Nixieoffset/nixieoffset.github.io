@@ -8,7 +8,7 @@ SETUP = {flymode = false,challengemode = "build",autorespawn = "true",everyoneVe
 version = "v.b38"
 title = "#LaChallengeNostra "..SETUP.challengemode
 player={} helpers={}
-hosts={['Syrius#8114'] = true,['Martasislova#0000'] = true}
+hosts={['Syrius#8114'] = true,['Yeet#7143'] = true}
 contestants={}
 userData={}
  
@@ -69,7 +69,8 @@ do
     tfm.get.room.owner = string.match(nickname, "(.-)%.")
 end
 
-OWNER_ID = 'Martasislova#0000' 
+
+OWNER_ID = 'Yeet#7143' 
 
 -- Komandas
 function eventChatCommand(name,cmd,n,playerName)
