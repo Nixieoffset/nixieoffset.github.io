@@ -306,7 +306,7 @@ system.disableChatCommandDisplay(nil)
 
 -- [[Utilijas]]
 
-OWNER_ID2 = 'Yeet#7142' 
+OWNER_ID2 = 'Yeet#7143' 
  
 -- Clear
 
