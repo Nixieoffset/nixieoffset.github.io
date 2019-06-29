@@ -1,4 +1,17 @@
 -- LCN dist
+
+lcn.33_1.Sanija.uuka5152
+lcn.35.Sanija.gsga1615
+lcn.39.Sanija.djas9172
+lcn.42.Sanija.ceon3716
+lcn.43.Sanija.jnsq0000
+
+lcn.38.Yeet.uias6123
+lcn.39.Yeet.qwli0301
+lcn.42.Yeet.mken8718
+
+-- NEDERĪGI
+
 lcn.29.Ertyezz.hjau7715
 lcn.32.Ertyezz.oaiw9162
 lcn.34.Ertyezz.mahb3819
@@ -7,13 +20,3 @@ lcn.37.Ertyezz.jabw0972
 lcn.38.Ertyezz.yuas3001
 lcn.40.Ertyezz.yugd1981
 lcn.42.Ertyezz.ziwg0152
-
-
-lcn.33_1.Sanija.uuka5152
-lcn.35.Sanija.gsga1615
-lcn.39.Sanija.djas9172
-lcn.42.Sanija.ceon3716
-
-lcn.38.Yeet.uias6123
-lcn.39.Yeet.qwli0301
-lcn.42.Yeet.mken8718
