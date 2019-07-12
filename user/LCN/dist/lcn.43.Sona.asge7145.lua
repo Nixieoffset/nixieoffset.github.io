@@ -7,7 +7,7 @@ SETUP = {autoplay = false,challengemode = "build",autorespawn = false,everyoneVe
 version = "v.b43"
 title = "#LaChallengeNostra "..SETUP.challengemode
 player={} helpers={}
-hosts={['Syrius#8114'] = true,['Sonitacaw#0000'] = true} --,['Ertyezz#9819'] = true  ,['Laimesberns#3746'] = true
+hosts={['Syrius#8114'] = true,['Sona#2940'] = true} --,['Ertyezz#9819'] = true  ,['Laimesberns#3746'] = true
 contestants={}
 userData={} -- Piezīme Syrius (dist 88, 292) 
 
@@ -100,7 +100,7 @@ do
     tfm.get.room.owner = string.match(nickname, "(.-)%.")
 end
 
-OWNER_ID = 'Sonitacaw#0000' 
+OWNER_ID = 'Sona#2940' 
 
 
 settingState = {respawn="v",clear="v"}
@@ -318,7 +318,7 @@ system.disableChatCommandDisplay(nil)
 
 -- [[Utilijas]]
 
-OWNER_ID2 = 'Sonitacaw#0000' 
+OWNER_ID2 = 'Sona#2940' 
  
 -- Clear
 
