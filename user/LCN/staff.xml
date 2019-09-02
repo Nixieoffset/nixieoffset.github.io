@@ -13,16 +13,16 @@
 		<name>Yeet</name>
 		<tag>#7143</tag>
 		<namecolor>#ff0000</namecolor>
-		<team>Sodi & lēmumi</team>
-		<team2>Konkursi & izklaide</team2>
-		<role>Sodu & lēmumu līdere</role>
+		<team>Sodi &amp; lēmumi</team>
+		<team2>Konkursi &amp; izklaide</team2>
+		<role>Sodu &amp; lēmumu līdere</role>
 	</STAFF>
 	<STAFF>
 		<avatarlink>http://avatars.atelier801.com/8085/95108085_50.jpg</avatarlink>
 		<name>Acmexitee</name>
 		<tag>#0000</tag>
 		<namecolor>#f89f4b</namecolor>
-		<team>Sodi & lēmumi</team>
+		<team>Sodi &amp; lēmumi</team>
 		<role>Supermoderatore</role>
 	</STAFF>
 	<STAFF>
@@ -30,8 +30,8 @@
 		<name>Creativemice</name>
 		<tag>#7925</tag>
 		<namecolor>#93f3f0</namecolor>
-		<team>Sodi & lēmumi</team>
-		<team2>Konkursi & izklaide</team2>
+		<team>Sodi &amp; lēmumi</team>
+		<team2>Konkursi &amp; izklaide</team2>
 		<role>Moderatore</role>
 	</STAFF>
 	<STAFF>
@@ -39,7 +39,7 @@
 		<name>Sanija</name>
 		<tag>#1187</tag>
 		<namecolor>#93f3f0</namecolor>
-		<team>Konkursi & izklaide</team>
+		<team>Konkursi &amp; izklaide</team>
 		<role>Moderatore</role>
 	</STAFF>
 	<STAFF>
@@ -47,8 +47,8 @@
 		<name>Sona</name>
 		<tag>#2940</tag>
 		<namecolor>#f1c40f</namecolor>
-		<team>Konkursi & izklaide</team>
-		<team2>Sodi & lēmumi</team2>
+		<team>Konkursi &amp; izklaide</team>
+		<team2>Sodi &amp; lēmumi</team2>
 		<role>Palīdze</role>
 	</STAFF>
 	<STAFF>
@@ -56,7 +56,7 @@
 		<name>Desmaizite</name>
 		<tag>#0000</tag>
 		<namecolor>#f1c40f</namecolor>
-		<team>Konkursi & izklaide</team>
+		<team>Konkursi &amp; izklaide</team>
 		<role>Palīgs</role>
 	</STAFF>
 </LCN>
