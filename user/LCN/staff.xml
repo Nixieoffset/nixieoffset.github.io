@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LCN>
+	<STAFF>
+		<avatarlink>http://avatars.atelier801.com/4473/69764473_50.jpg</avatarlink>
+		<name>Syrius</name>
+		<tag>#8114</tag>
+		<namecolor>#ff0000</namecolor>
+		<team>-</team>
+		<role>Līderis</role>
+	</STAFF>
+	<STAFF>
+		<avatarlink>http://avatars.atelier801.com/888/52460888_50.jpg</avatarlink>
+		<name>Yeet</name>
+		<tag>#7143</tag>
+		<namecolor>#ff0000</namecolor>
+		<team>Sodi & lēmumi</team>
+		<team2>Konkursi & izklaide</team2>
+		<role>Sodu & lēmumu līdere</role>
+	</STAFF>
+	<STAFF>
+		<avatarlink>http://avatars.atelier801.com/8085/95108085_50.jpg</avatarlink>
+		<name>Acmexitee</name>
+		<tag>#0000</tag>
+		<namecolor>#f89f4b</namecolor>
+		<team>Sodi & lēmumi</team>
+		<role>Supermoderatore</role>
+	</STAFF>
+	<STAFF>
+		<avatarlink>http://avatars.atelier801.com/3819/100293819_50.jpg</avatarlink>
+		<name>Creativemice</name>
+		<tag>#7925</tag>
+		<namecolor>#93f3f0</namecolor>
+		<team>Sodi & lēmumi</team>
+		<team2>Konkursi & izklaide</team2>
+		<role>Moderatore</role>
+	</STAFF>
+	<STAFF>
+		<avatarlink>http://avatars.atelier801.com/7154/99617154_50.jpg</avatarlink>
+		<name>Sanija</name>
+		<tag>#1187</tag>
+		<namecolor>#93f3f0</namecolor>
+		<team>Konkursi & izklaide</team>
+		<role>Moderatore</role>
+	</STAFF>
+	<STAFF>
+		<avatarlink>http://avatars.atelier801.com/111/53440111_50.jpg</avatarlink>
+		<name>Sona</name>
+		<tag>#2940</tag>
+		<namecolor>#f1c40f</namecolor>
+		<team>Konkursi & izklaide</team>
+		<team2>Sodi & lēmumi</team2>
+		<role>Palīdze</role>
+	</STAFF>
+	<STAFF>
+		<avatarlink></avatarlink>
+		<name>Desmaizite</name>
+		<tag>#0000</tag>
+		<namecolor>#f1c40f</namecolor>
+		<team>Konkursi & izklaide</team>
+		<role>Palīgs</role>
+	</STAFF>
+</LCN>
