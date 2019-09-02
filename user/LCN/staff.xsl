@@ -10,13 +10,13 @@
       <th style="text-align:left">Avatars</th>
       <th style="text-align:left">Lietotājvārds</th>
       <th style="text-align:left">Primārā joma</th>
-      <th style="text-align:left">Sekundārā joma<th>
-      <th style="text-align:left">Amats<th>
+      <th style="text-align:left">Sekundārā joma</th>
+      <th style="text-align:left">Amats</th>
     </tr>
     <xsl:for-each select="LCN/STAFF">
     <tr>
       <td><img src="<xsl:value-of select="title"/>"/></td>
-      <td><font color="<xsl:value-of select="namecolor"/>"><xsl:value-of select="name"/><font color="#606090" size="1"></font></td>
+      <td><font color="<xsl:value-of select="namecolor"/>"><xsl:value-of select="name"/></font><font color="#606090" size="1"><xsl:value-of select="tag"/></font></td>
       <td><xsl:value-of select="team"/></td>
       <td><xsl:value-of select="team2"/><td>
       <td><xsl:value-of select="role"/><td>
