@@ -24,7 +24,8 @@ lcn.43.Sona.asge7145
 lcn.46.Sona.kjiz8789
 lcn.47.Sona.zopl6715
 
-lcn.46.Creativemice.ashb8901.lua
+lcn.46.Creativemice.ashb8901
+lcn.47.Creativemice.nemo4810
 
 -- NEDERĪGI
 
