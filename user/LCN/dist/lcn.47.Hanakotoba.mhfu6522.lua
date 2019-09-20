@@ -7,7 +7,7 @@ SETUP = {autoplay = false,challengemode = "survival",autorespawn = false,lang="l
 version = "v.b47"
 title = "#LaChallengeNostra "..SETUP.challengemode
 player={} helpers={} disq={} spectators={}
-hosts={['Syrius#8114'] = true,['Yeet#7143'] = true} --,['Ertyezz#9819'] = true  ,['Laimesberns#3746'] = true
+hosts={['Syrius#8114'] = true,['Hanakotoba#7318'] = true} --,['Ertyezz#9819'] = true  ,['Laimesberns#3746'] = true
 contestants={}
 userData={} -- Piezīme Syrius (dist 88, 292) 
 
