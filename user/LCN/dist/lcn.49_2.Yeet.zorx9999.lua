@@ -292,7 +292,7 @@ elseif cmd=="c build" then error0x1(name) end
 		  	g_restitution = c[8]
 		  	g_friction = c[9]
 		  	g_angle = c[10]
-			if c[11] then g_dyn=toboolean(c[11]) else g_dyn=false end
+			if c[11] == "true" or tonumber(c[11]) == 1 then g_dyn=true else g_dyn=false end
 			g_mass = c[12]
         	ui.showColorPicker(304,name,0x000022,trans[281])
 		else
