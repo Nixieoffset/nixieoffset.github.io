@@ -1,1 +1,94 @@
-
+<head>
+  <title>LCN documentation</title>
+<style>
+body{background-color:#000022;width:80%;margin:auto;font-family:"Verdana Pro",Verdana,Consolas,monospace;}
+h1, h2, h3, h4, h5, h6 {text-align:center;color:#ED67EA;}  
+li {color:#9292aa;font-size:12px;}
+acc-purp {color:#8a2be2;}
+acc-grbl {color:#b3b3ff;}
+acc-lbrp {color:#b3b3ff;}
+acc-brp {color:#6e6eff;}
+a {color:#8a2be2;}
+.center, center {text-align:center;margin:auto;}
+</style>
+</head>
+<p class="center"><acc-purp>[<b><acc-grbl>Documentation</acc-grbl></b> | <a href='https://nixieoffset.zfc.id.lv/user/LCN/docs/en/v.b51/actions.html'>Action IDs</a> | <a href='https://nixieoffset.zfc.id.lv/user/LCN/docs/en/v.b51/setup.html'>SETUP values</a> | <a href='https://nixieoffset.zfc.id.lv/user/LCN/docs/en/v.b51/flags.html'>Command flags</a>]</acc-purp></p>
+<p class="center"><a href='https://nixieoffset.zfc.id.lv/user/LCN/docs/lv/v.b51/index.html'><img src="https://atelier801.com/img/pays/lv.png"/></a> <a href='https://nixieoffset.zfc.id.lv/user/LCN/docs/en/v.b51/index.html'><img src="https://atelier801.com/img/pays/gb.png"/></a></p>
+<br>
+<h1>#LCN v.b51 documentation</h1>
+<h3>LEGEND</h3>
+<ul>
+<li><acc-brp>[mandatory argument]</acc-brp></li>
+<li><acc-lbrp>[optional argument]</acc-lbrp></li>
+</ul>
+<br>
+<h3>CONTESTANT COMMANDS</h3>
+<ul>
+<li>!i<i> - opens settings</i></li>
+<li>!pr <acc-brp>[name]</acc-brp><i> - opens player's technical profile</i></li>
+<li>!spawn <acc-brp>[id]</acc-brp><acc-brp>[x]</acc-brp><acc-brp>[y]</acc-brp><acc-grbl>[angle]</acc-grbl><acc-grbl>[x acceleration]</acc-grbl><acc-grbl>[y acceleration]<acc-grbl>[is transparent?]</acc-grbl></acc-grbl><i> - summons an object</i></li>
+</ul>
+<br>
+<h3>HELPER COMMANDS</h3>
+<ul>
+<li>!bc <acc-lbrp>[text]</acc-lbrp><i> - shows yellow text in the upper interface for every player (without HTML)</i></li>
+<li>!ce <acc-brp>[name|all]</acc-brp><i> - gives cheese to the player</i></li>
+<li>!ce* <acc-brp>[name|all]</acc-brp><i> - takes the cheese from the player</i></li>
+<li>!clear <i> - clears all objects from the map</i></li>
+<li>!f <acc-brp>[name|all]</acc-brp><i> - freezes the player</i></li>
+<li>!f* <acc-brp>[name|all]</acc-brp><i> - unfreezes the player</i></li>
+<li>!hc <i> - opens HostCore</i></li>
+<li>!meep <acc-brp>[name|all]</acc-brp><i> - grants meep ability to the player</i></li>
+<li>!r <acc-brp>[name|all]</acc-brp><i> - respawns the player</i></li>
+<li>!s <acc-brp>[name|all]</acc-brp><i> - makes the player a shaman</i></li>
+<li>!s* <acc-brp>[name|all]</acc-brp><i> - takes away the shaman powers from the player</i></li>
+<li>!size <acc-brp>[name|all][size]</acc-brp><i> - changes the player's size</i></li>
+<li>!smode <acc-brp>[name|all]</acc-brp><acc-lbrp>[mode]</acc-lbrp><i> - makes the player a shaman with skills. If the second argument is specified, changes the shaman mode of the player.</i></li>
+</ul>
+<br>
+<h3>HOST COMMANDS</h3>
+<ul>
+<li>!add <acc-brp>[name|all][value]</acc-brp><i> - increments/decrements the player's score by the specified value in the scoreboard</i></li>
+<li>!barrier <acc-brp>[parts][map's length]</acc-brp><i> - splits the map in parts using barriers</i></li>
+<li>!bc* <acc-lbrp>[text]</acc-lbrp><i> - shows green text in the upper interface for every player (with HTML)</i></li>
+<li>!c <acc-brp>[mode]</acc-brp><acc-lbrp>[pkg map rotation]</acc-lbrp><i> - begins a contest</i></li>
+<li>!cd <acc-brp>[name][background transparency][background color][message x][message y]</acc-brp><acc-lbrp>[reason]</acc-lbrp><i> - disqualifies the player with a custom disqualification interface</i></li>
+<li>!col <acc-brp>[name|all]</acc-brp><i> - colors the player's name</i></li>
+<li>!d <acc-brp>[name]</acc-brp><acc-lbrp>[reason]</acc-lbrp><i> - disqualifies the player with ability to spectate</i></li>
+<li>!d* <acc-brp>[name]</acc-brp><acc-lbrp>[reason]</acc-lbrp><i> - disqualifies the player without the ability to spectate</i></li>
+<li>!debug <acc-brp>[function]</acc-brp><acc-lbrp>[arg1][arg2][arg3][arg4][arg5][arg6][arg7][arg8][arg9][arg10][arg11][arg12][arg13][arg14]</acc-lbrp><i> - runs a function from the code, only works if SETUP.debug is true.</i></li>
+<li>!defcol <acc-brp>[tags]</acc-brp><i> - definē jaunu HTML krāsu tagu</i></li>
+<li>!end - <i>shows end map, ends contest</i></li>
+<li>!end* - <i>shows end map and shows a feedback window for everyone</i></li>
+<li>!g <acc-brp>[id][type][x][y][width][height]</acc-brp><acc-lbrp>[restitution][friction][rotation][is dynamic?][mass]</acc-lbrp><i> - creates a ground with collision</i></li>
+<li>!g* <acc-brp>[id][type][x][y][width][height]</acc-brp><acc-lbrp>[restitution][friction][rotation][is dynamic?][mass]</acc-lbrp><i> - creates a ground without collision</i></li>
+<li>!hc <acc-lbrp>[flags...]</acc-lbrp><i> - opens HostCore</i>
+<li>!hc* <i> - opens HostCore in tabbed view</i></li>
+<li>!kill <acc-brp>[name|all]</acc-brp><i> - kills the player</i></li>
+<li>!link <acc-brp>[name][name2|all]</acc-brp><i> - links players as soulmates</i></li>
+<li>!link* <acc-brp>[name][name2|all]</acc-brp><i> - unlinks players as soulmates</i></li>
+<li>!map <acc-lbrp>[mgoc][width][height][background][ground type][ground color]</acc-lbrp><i> - loads a custom map</i></li>
+<li>!md <acc-brp>[id][x1][y1][x2][y2]</acc-brp><acc-lbrp>[width]</acc-lbrp><i> - draws a line</i></li>
+<li>!md* <acc-brp>[id][x1][y1][x2][y2][width][color][transparency]</acc-brp><i> - draws a line</i></li>
+<li>!msg <acc-brp>[name][message]</acc-brp><i> - sends the player a private message in the upper interface</i></li>
+<li>!np <acc-brp>[code]</acc-brp><i> - plays the specified map or a random map from the specified category</i></li>
+<li>!np* <acc-brp>[code]</acc-brp><i> - plays the specified maps mirrored version or a random mirrored map from the specified category</i></li>
+<li>!p <acc-brp>[id][type][text]</acc-brp><i> - shows a popup</i></li>
+<li>!play <acc-brp>[name|all][id]</acc-brp><acc-lbrp>[extra data]</acc-lbrp><i> - makes the player do an emote</i></li>
+<li>!r* <acc-brp>[name|all]</acc-brp><acc-lbrp>[x][y]</acc-lbrp><i> - respawns the player in the specified coordinates</i></li>
+<li>!rmtxt <acc-brp>[id]</acc-brp><acc-lbrp>[flags...]</acc-lbrp><i> - removes a text area</i></li>
+<li>!role <acc-brp>[action][role][name]</acc-brp><i> - grants/strips the player of a role</i></li>
+<li>!score <acc-brp>[name|all][value]</acc-brp><i> - sets the player's score to the specified value in the scoreboard</i></li>
+<li>!settp <acc-brp>[id][x][y]</acc-brp><i> - sets a teleportation destination</i></li>
+<li>!sname <acc-lbrp>[text]</acc-lbrp><i> - changes shaman's name in the information bar</i></li>
+<li>!sp <acc-brp>[name]</acc-brp><i> - makes the player a spectator</i></li>
+<li>!spawn* <acc-brp>[count][id]</acc-brp><acc-brp>[x]</acc-brp><acc-brp>[y]</acc-brp><acc-grbl>[angle]</acc-grbl><acc-grbl>[x acceleration]</acc-grbl><acc-grbl>[y acceleration]<acc-grbl>[is transparent?]</acc-grbl></acc-grbl><i> - summons multiple objects</i></li>
+<li>!startfrom <acc-brp>[round]</acc-brp><i> - begins the contest from the specified round</i></li>
+<li>!test <i>- plays a survival test map</i></li>
+<li>!tfm <acc-brp>[name|all]</acc-brp><i> - allows the player to transform</i></li>
+<li>!tfm* <acc-brp>[name|all]</acc-brp><i> - disallows the player to transform</i></li>
+<li>!tr <acc-brp>[id]</acc-brp><i> - shows a translation in the HostCore interface</i></li>
+<li>!txt <acc-brp>[id][x][y][color][text]</acc-brp><acc-lbrp>[flags...]</acc-lbrp><i> - creates a text area</i></li>
+<li>!uc <acc-lbrp>[text]</acc-lbrp><i> - shows text in the lower interface for every player (with HTML)</i></li>
+<li>!uc* <acc-lbrp>[text]</acc-lbrp><i> - shows highlighted text in the lower interface for every player (with HTML)</i></li>
+</ul>
