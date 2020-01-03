@@ -1,4 +1,4 @@
-﻿#modal-overlay {
+#modal-overlay {
   background: #000;
   filter: alpha(opacity=60);
   height: 100%;
@@ -14,15 +14,16 @@
 }
 
 #modal-container {
-  background: #fff;
-  border: 1px solid #ababab;
+  background: #000022;
+  border: 1px solid #000044;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
   height: auto;
   padding: 10px;
-  font-family: arial,sans-serif;
-  font-size: 14px;
+  font-family: inherit;
+  font-size: 12px;
   position: absolute;
   z-index: 998;
+  color: #9292aa;
 }
 
 #modal-header {
@@ -32,9 +33,9 @@
 }
 
 #modal-close {
-  background: #fff url('../images/jsmodal/modal-close.png') no-repeat center center;
+  background: #000022 url(../images/jsmodal/modal-close.png) no-repeat center center;
   cursor: pointer;
-  display: block;
+  display: flex;
   filter: alpha(opacity=60);
   -moz-opacity: 0.6;
   -webkit-opacity: 0.6;
