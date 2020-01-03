@@ -1,6 +1,7 @@
 <head>
     <title>LCN dokumentācija</title>
 <style>
+@import url("/user/LCN/resources/jsmod/css/jsmodal-dark.css");
 body{background-color:#000022;width:70%;margin:auto;font-family:"Verdana Pro",Verdana,Consolas,monospace;}
 h1, h2, h4 {text-align:center;color:#ED67EA;}  
 h3, h5, h6 {color:#ED67EA;}
@@ -15,6 +16,7 @@ acc-brp {color:#6e6eff;}
 a {color:#8a2be2;}
 .center, center {text-align:center;margin:auto;}
 </style>
+<script src="/user/LCN/resources/jsmod/js/jsmodal-1.0d.min.js"></script>    
 </head>
 <p class="center"><acc-purp>[<a href='https://nixieoffset.zfc.id.lv/user/LCN/docs/lv/v.b51/'>Dokumentācija</a> | <a href='https://nixieoffset.zfc.id.lv/user/LCN/docs/lv/v.b51/actions'>Darbību ID</a> | <b><acc-grbl>SETUP vērtības</acc-grbl></b> | <a href='https://nixieoffset.zfc.id.lv/user/LCN/docs/lv/v.b51/flags'>Flagi komandām</a>]</acc-purp></p>
 <p class="center"><a href='https://nixieoffset.zfc.id.lv/user/LCN/docs/lv/v.b51/setup'><img src="https://atelier801.com/img/pays/lv.png"/></a> <a href='https://nixieoffset.zfc.id.lv/user/LCN/docs/en/v.b51/setup'><img src="https://atelier801.com/img/pays/gb.png"/></a></p>
@@ -40,7 +42,7 @@ a {color:#8a2be2;}
 <h3>challengemode</h3> <h6><i><acc-grey>Pārslēdz moduļa režīmu</acc-grey></i></h6>
 <ul>
 <li><acc-lbrp>build</acc-lbrp><i> - būvdarbu cīņas/izaicinājumu izaicinājums, tukšgaita</i></li>
-<li><acc-lbrp>pkg</acc-lbrp><i> - pakotnes rotācija, to nosaka !c otrais parametrs. Mapju rotācijas skatīt <a href='https://atelier801.com/conversation?co=835729&p=7#m136'>šeit.</a></i></li>
+<li><acc-lbrp>pkg</acc-lbrp><i> - pakotnes rotācija, to nosaka !c otrais parametrs. Mapju rotācijas skatīt <a id="modal-1">šeit.</a></i></li>
 <li><acc-lbrp>survival</acc-lbrp><i> - izdzīvošanas challenge</i></li>
 <li><acc-lbrp>thirty</acc-lbrp><i> - 30 sekunžu challenge mapes ar countdown</i></li>
 <li><acc-lbrp>vanilla</acc-lbrp><i> - šamaņa konkursi ar vanilla rotāciju</i></li>
@@ -87,3 +89,11 @@ a {color:#8a2be2;}
 <li><acc-lbrp>classic</acc-lbrp><i> - dizains, kas līdzīgs v.b26-v.b40 dizainam (nav pabeigts)</i></li>
 <li><acc-lbrp>oldclassic</acc-lbrp><i> - dizains, kas līdzīgs v.b1-v.b25 dizainam (nav pabeigts)</i></li>
 </ul>
+<script>
+document.getElementById('modal-1').onclick = function() {
+  Modal.open({
+    ajaxContent: 'http://nixieoffset.zfc.id.lv/user/LCN/resources/maptypes.html',
+    draggable: true,
+  });
+}
+</script>
