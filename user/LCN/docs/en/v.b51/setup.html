@@ -1,0 +1,99 @@
+<head>
+    <title>LCN documentation</title>
+<style>
+@import url("/user/LCN/resources/jsmod/css/jsmodal-dark.css");
+body{background-color:#000022;width:70%;margin:auto;font-family:"Verdana Pro",Verdana,Consolas,monospace;}
+h1, h2, h4 {text-align:center;color:#ED67EA;}  
+h3, h5, h6 {color:#ED67EA;}
+h6 {margin:-15px;padding:0px;margin-left:0px}
+acc-grey {color:#9292aa;}
+li {color:#9292aa;font-size:12px;}
+acc-purp {color:#8a2be2;}
+acc-grbl {color:#b3b3ff;}
+acc-lbrp {color:#b3b3ff;}
+acc-lbr2 {color:#8383cc;font-size:10px;}
+acc-brp {color:#6e6eff;}
+a {color:#8a2be2;}
+.center, center {text-align:center;margin:auto;}
+</style>
+<script src="/user/LCN/resources/jsmod/js/jsmodal-1.0d.min.js"></script>    
+</head>
+<p class="center"><acc-purp>[<a href='https://nixieoffset.zfc.id.lv/user/LCN/docs/en/v.b51/'>Documentation</a> | <a href='https://nixieoffset.zfc.id.lv/user/LCN/docs/en/v.b51/actions'>Action IDs</a> | <b><acc-grbl>SETUP values</acc-grbl></b> | <a href='https://nixieoffset.zfc.id.lv/user/LCN/docs/en/v.b51/flags'>Command flags</a>]</acc-purp></p>
+<p class="center"><a href='https://nixieoffset.zfc.id.lv/user/LCN/docs/lv/v.b51/setup'><img src="https://atelier801.com/img/pays/lv.png"/></a> <a href='https://nixieoffset.zfc.id.lv/user/LCN/docs/en/v.b51/setup'><img src="https://atelier801.com/img/pays/gb.png"/></a></p>
+<br>
+<h1>#LCN v.b51 SETUP values</h1>
+<h2 class="center">LEGEND</h2>
+<ul>
+<li><acc-brp>[default value, if not specified]</acc-brp></li>
+<li><acc-lbrp>[a valid value]</acc-lbrp></li>
+</ul>
+<br>
+<h2 class="center">SETUP</h2><br>
+<h3>autoplay</h3> <h6><i><acc-grey>Toggles between manual mode (PgUp) and automatical map rotation</acc-grey></i></h6>
+<ul>
+<li><acc-brp>false</acc-brp><i> - manual rotation</i></li>
+<li><acc-lbrp>true</acc-lbrp><i> - automatic rotation, maps cycle by themselves</i></li>
+</ul>
+<h3>autorespawn</h3> <h6><i><acc-grey>Toggles between automatic respawn and the default death which needs to be respawned with !r</acc-grey></i></h6>
+<ul>
+<li><acc-brp>false</acc-brp><i> - if mice die, they need to be revived with !r</i></li>
+<li><acc-lbrp>true</acc-lbrp><i> - impossible to die, respaws automatically</i></li>
+</ul>
+<h3>challengemode</h3> <h6><i><acc-grey>Switches the mode of the module</acc-grey></i></h6>
+<ul>
+<li><acc-lbrp>build</acc-lbrp><i> - builders' battle/The Challenge, free mode</i></li>
+<li><acc-lbrp>pkg</acc-lbrp><i> - package rotation which is specified by the second argument of !c. To see the list of valid map rotations, click <a name="ms222" href="#ms222" id="modal-1">here.</a></i></li>
+<li><acc-lbrp>survival</acc-lbrp><i> - survival challenge</i></li>
+<li><acc-lbrp>thirty</acc-lbrp><i> - 30 second challenge rotation with countdown</i></li>
+<li><acc-lbrp>vanilla</acc-lbrp><i> - shaman-related contest with vanilla rotation</i></li>
+</ul>
+<h3>debug</h3> <h6><i><acc-grey>Toggles permission to use !debug</acc-grey></i></h6>
+<ul>
+<li><acc-brp>false</acc-brp><i> - module works as usual</i></li>
+<li><acc-lbrp>true</acc-lbrp><i> - !debug command is available</i></li>
+</ul>
+<h3>lang</h3> <h6><i><acc-grey>Changes language</acc-grey></i></h6>
+<ul>
+<li><acc-lbrp>lv</acc-lbrp><i> - Latvian</i></li>
+<li><acc-lbrp>en</acc-lbrp><i> - English</i></li>
+<li><acc-lbrp>de</acc-lbrp><i> - German</i></li>
+</ul>
+<h3>logcallbacks</h3> <h6><i><acc-grey>Toggles the visibility of actions in #lua</acc-grey></i></h6>
+<ul>
+<li><acc-brp>false</acc-brp><i> - actions are shown only in HostCore</i></li>
+<li><acc-lbrp>true</acc-lbrp><i> - actions are shown in #lua like commands</i></li>
+</ul>
+<h3>lsimage</h3> <h6><i><acc-grey>Changes the loading screen's left side's image</acc-grey></i></h6>
+<ul>
+<li><acc-brp>16f09800dd9.png</acc-brp><i> - La Cros Nostra logo</i></li>
+</ul>
+<h3>nocontrast</h3> <h6><i><acc-grey>Toggles between visibility of contrast in UtilCore</acc-grey></i></h6>
+<ul>
+<li><acc-brp>false</acc-brp><i> - UtilCore uses contrast</i></li>
+<li><acc-lbrp>true</acc-lbrp><i> - UtilCore does not use contrast, mandatory for builders' battle/The Challenge</i></li>
+</ul>
+<h3>panelpos</h3> <h6><i><acc-grey>Changes the position of the control panel</acc-grey></i></h6>
+<ul>
+<li><acc-brp>1</acc-brp><i> - left side, offscreen</i></li>
+<li><acc-lbrp>2</acc-lbrp><i> - left side, onscreen</i></li>
+<li><acc-lbrp>3</acc-lbrp><i> - right side, offscreen</i></li>
+<li><acc-lbrp>4</acc-lbrp><i> - right side, onscreen/i></li>
+</ul>
+<h3>title</h3> <h6><i><acc-grey>Changes the title of the module</acc-grey></i></h6>
+<ul>
+<li><acc-brp>lacrosnostra</acc-brp><i> - tribe name "La Cros Nostra"</i></li>
+</ul>
+<h3>theme</h3> <h6><i><acc-grey>Changes the theme of the module</acc-grey></i></h6>
+<ul>
+<li><acc-brp>modern</acc-brp><i> - default blue theme</i></li>
+<li><acc-lbrp>classic</acc-lbrp><i> - theme reminiscent of the one used from v.b26 to v.b40 (not finished yet)</i></li>
+<li><acc-lbrp>oldclassic</acc-lbrp><i> - theme reminiscent of the one used from v.b1 to v.b25 (not finished yet)</i></li>
+</ul>
+<script>
+document.getElementById('modal-1').onclick = function() {
+  Modal.open({
+    ajaxContent: 'https://nixieoffset.zfc.id.lv/user/LCN/resources/maptypes_en.html',
+    draggable: true,
+  });
+}
+</script>
