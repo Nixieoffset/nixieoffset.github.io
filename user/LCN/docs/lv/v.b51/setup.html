@@ -1,0 +1,88 @@
+<head>
+<style>
+body{background-color:#000022;width:70%;margin:auto;font-family:"Verdana Pro",Verdana,Consolas,monospace;}
+h1, h2, h4 {text-align:center;color:#ED67EA;}  
+h3, h5, h6 {color:#ED67EA;}
+h6 {margin:-15px;padding:0px;margin-left:0px}
+acc-grey {color:#9292aa;}
+li {color:#9292aa;font-size:12px;}
+acc-purp {color:#8a2be2;}
+acc-grbl {color:#b3b3ff;}
+acc-lbrp {color:#b3b3ff;}
+acc-lbr2 {color:#8383cc;font-size:10px;}
+acc-brp {color:#6e6eff;}
+a {color:#8a2be2;}
+.center, center {text-align:center;margin:auto;}
+</style>
+</head>
+<p class="center"><acc-purp>[<a href='https://nixieoffset.zfc.id.lv/user/LCN/docs/lv/v.b51/'>Dokumentācija</a> | <a href='https://nixieoffset.zfc.id.lv/user/LCN/docs/lv/v.b51/actions'>Darbību ID</a> | <b><acc-grbl>SETUP vērtības</acc-grbl></b> | <a href='https://nixieoffset.zfc.id.lv/user/LCN/docs/lv/v.b51/flags'>Flagi komandām</a>]</acc-purp></p>
+<p class="center"><a href='https://nixieoffset.zfc.id.lv/user/LCN/docs/lv/v.b51/setup'><img src="https://atelier801.com/img/pays/lv.png"/></a> <a href='https://nixieoffset.zfc.id.lv/user/LCN/docs/en/v.b51/setup'><img src="https://atelier801.com/img/pays/gb.png"/></a></p>
+<br>
+<h1>#LCN v.b51 SETUP vērtības</h1>
+<h2 class="center">APZĪMĒJUMI</h2>
+<ul>
+<li><acc-brp>[noklusējuma vērtība, ja nav norādīts]</acc-brp></li>
+<li><acc-lbrp>[iestatāma vērtība]</acc-lbrp></li>
+</ul>
+<br>
+<h2 class="center">SETUP</h2><br>
+<h3>autoplay</h3> <h6><i><acc-grey>Pārslēdzas starp manuālo režīmu (PgUp) un  automātisku mapju pārslēgšanos</acc-grey></i></h6>
+<ul>
+<li><acc-brp>false</acc-brp><i> - manuāla rotācija</i></li>
+<li><acc-lbrp>true</acc-lbrp><i> - automātiska rotācija, mapes pārslēdzas pašas</i></li>
+</ul>
+<h3>autorespawn</h3> <h6><i><acc-grey>Pārslēdzas starp automātisku atdzīvošanos nāves gadījumā vai standarta nāvi, kura jāatdzīvina ar !r</acc-grey></i></h6>
+<ul>
+<li><acc-brp>false</acc-brp><i> - ja peles nomirst, tās jāatdzīvina ar !r</i></li>
+<li><acc-lbrp>true</acc-lbrp><i> - nav iespējams nomirt, automātiski atdzīvojas</i></li>
+</ul>
+<h3>challengemode</h3> <h6><i><acc-grey>Pārslēdz moduļa režīmu</acc-grey></i></h6>
+<ul>
+<li><acc-lbrp>build</acc-lbrp><i> - būvdarbu cīņas/izaicinājumu izaicinājums, tukšgaita</i></li>
+<li><acc-lbrp>pkg</acc-lbrp><i> - pakotnes rotācija, to nosaka !c otrais parametrs. Mapju rotācijas skatīt <a href='https://atelier801.com/conversation?co=835729&p=7#m136'>šeit.</a></i></li>
+<li><acc-lbrp>survival</acc-lbrp><i> - izdzīvošanas challenge</i></li>
+<li><acc-lbrp>thirty</acc-lbrp><i> - 30 sekunžu challenge mapes ar countdown</i></li>
+<li><acc-lbrp>vanilla</acc-lbrp><i> - šamaņa konkursi ar vanilla rotāciju</i></li>
+</ul>
+<h3>debug</h3> <h6><i><acc-grey>Pārslēdzas starp !debug komandas lietošanas spēju</acc-grey></i></h6>
+<ul>
+<li><acc-brp>false</acc-brp><i> - modulis darbojas normāli</i></li>
+<li><acc-lbrp>true</acc-lbrp><i> - kļūst pieejama !debug komanda</i></li>
+</ul>
+<h3>lang</h3> <h6><i><acc-grey>Maina valodu</acc-grey></i></h6>
+<ul>
+<li><acc-lbrp>lv</acc-lbrp><i> - latviešu</i></li>
+<li><acc-lbrp>en</acc-lbrp><i> - angļu</i></li>
+<li><acc-lbrp>de</acc-lbrp><i> - vācu</i></li>
+</ul>
+<h3>logcallbacks</h3> <h6><i><acc-grey>Pārslēdz darbību rādīšanu #lua</acc-grey></i></h6>
+<ul>
+<li><acc-brp>false</acc-brp><i> - darbības tiek rādītas tikai izmantojot HostCore</i></li>
+<li><acc-lbrp>true</acc-lbrp><i> - darbības tiek rādītas #lua tāpat kā komandas</i></li>
+</ul>
+<h3>lsimage</h3> <h6><i><acc-grey>Nomaina sākuma ekrāna kreisā sāna logo</acc-grey></i></h6>
+<ul>
+<li><acc-brp>16f09800dd9.png</acc-lbrp><i> - La Cros Nostra logo</i></li>
+</ul>
+<h3>nocontrast</h3> <h6><i><acc-grey>Pārslēdzas starp kontrasta režīmiem</acc-grey></i></h6>
+<ul>
+<li><acc-brp>false</acc-brp><i> - utilcore lieto kontrastu</i></li>
+<li><acc-lbrp>true</acc-lbrp><i> - utilcore nelieto kontrastu, obligāti būvdarbu cīņām/izaicinājumu izaicinājumam</i></li>
+</ul>
+<h3>panelpos</h3> <h6><i><acc-grey>Maina paneļa atrašanās vietu</acc-grey></i></h6>
+<ul>
+<li><acc-brp>1</acc-brp><i> - kreisā puse, ārpus ekrāna</i></li>
+<li><acc-lbrp>2</acc-lbrp><i> - kreisā puse, iekš ekrāna</i></li>
+<li><acc-lbrp>3</acc-lbrp><i> - labā puse, ārpus ekrāna</i></li>
+<li><acc-lbrp>4</acc-lbrp><i> - labā puse, iekš ekrāna</i></li>
+</ul>
+<h3>title</h3> <h6><i><acc-grey>Maina moduļa vārdu</acc-grey></i></h6>
+<ul>
+<li><acc-brp>lacrosnostra</acc-brp><i> - "La Cros Nostra" cilts nosaukums</i></li>
+</ul>
+<h3>theme</h3> <h6><i><acc-grey>Maina moduļa dizainu</acc-grey></i></h6>
+<ul>
+<li><acc-brp>modern</acc-brp><i> - standarta zilais dizains</i></li>
+<li><acc-lbrp>classic</acc-lbrp><i> - dizains, kas līdzīgs v.b26-v.b40 dizainam (nav pabeigts)</i></li>
+<li><acc-lbrp>oldclassic</acc-lbrp><i> - dizains, kas līdzīgs v.b1-v.b25 dizainam (nav pabeigts)</i></li>
+</ul>
