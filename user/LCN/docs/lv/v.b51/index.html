@@ -1,7 +1,8 @@
 <head>
   <title>LCN dokumentācija</title>
 <style>
-body{background-color:#000022;width:80%;margin:auto;font-family:"Verdana Pro",Verdana,Consolas,monospace;}
+body{margin:0;background-color:#000022;font-family:"Verdana Pro",Verdana,Consolas,monospace;}
+.cnt{width:80%;margin:auto;}
 h1, h2, h3, h4, h5, h6 {text-align:center;color:#ED67EA;}  
 li {color:#9292aa;font-size:12px;}
 acc-purp {color:#8a2be2;}
@@ -10,10 +11,16 @@ acc-lbrp {color:#b3b3ff;}
 acc-brp {color:#6e6eff;}
 a {color:#8a2be2;}
 .center, center {text-align:center;margin:auto;}
+.nav {display:block;width:100%;height:20px;background:#000044;position:sticky;top:0px;padding:5px}
+.nav a {text-decoration:none;color:#9292aa;}
+.nav .langbar {position:sticky;top:0px;display:inline;float:right;}
+.nav a:hover {color:#ed67ea;}
 </style>
 </head>
-<p class="center"><acc-purp>[<b><acc-grbl>Dokumentācija</acc-grbl></b> | <a href='https://nixieoffset.zfc.id.lv/user/LCN/docs/lv/v.b51/actions'>Darbību ID</a> | <a href='https://nixieoffset.zfc.id.lv/user/LCN/docs/lv/v.b51/setup'>SETUP vērtības</a> | <a href='https://nixieoffset.zfc.id.lv/user/LCN/docs/lv/v.b51/flags'>Flagi komandām</a>]</acc-purp></p>
-<p class="center"><a href='https://nixieoffset.zfc.id.lv/user/LCN/docs/lv/v.b51/index.html'><img src="https://atelier801.com/img/pays/lv.png"/></a> <a href='https://nixieoffset.zfc.id.lv/user/LCN/docs/en/v.b51/index.html'><img src="https://atelier801.com/img/pays/gb.png"/></a></p>
+<body>
+<div class="nav"><acc-purp><b><acc-grbl>Dokumentācija</acc-grbl></b> | <a href='https://nixieoffset.zfc.id.lv/user/LCN/docs/lv/v.b51/actions'>Darbību ID</a> | <a href='https://nixieoffset.zfc.id.lv/user/LCN/docs/lv/v.b51/setup'>SETUP vērtības</a> | <a href='https://nixieoffset.zfc.id.lv/user/LCN/docs/lv/v.b51/flags'>Flagi komandām</a></acc-purp><div class="langbar"><a href='https://nixieoffset.zfc.id.lv/user/LCN/docs/lv/v.b51/index.html'><img src="https://atelier801.com/img/pays/lv.png"/></a> <a href='https://nixieoffset.zfc.id.lv/user/LCN/docs/en/v.b51/index.html'><img src="https://atelier801.com/img/pays/gb.png"/></a></div></div>
+<p class="center"></p>
+<div class="cnt">
 <br>
 <h1>#LCN v.b51 dokumentācija</h1>
 <h3>APZĪMĒJUMI</h3>
@@ -92,3 +99,5 @@ a {color:#8a2be2;}
 <li>!uc <acc-lbrp>[teksts]</acc-lbrp><i> - apakšējā interfeisā visiem spēlētājiem parāda tekstu (ar HTML)</i></li>
 <li>!uc* <acc-lbrp>[teksts]</acc-lbrp><i> - apakšējā interfeisā visiem spēlētājiem parāda izceltu tekstu (ar HTML)</i></li>
 </ul>
+</div>
+</body>
