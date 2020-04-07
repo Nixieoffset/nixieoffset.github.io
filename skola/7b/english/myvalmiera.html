@@ -1,4 +1,4 @@
-﻿<head>
+<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -6,13 +6,15 @@
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css" rel="stylesheet">
     	<link href="https://getbootstrap.com/docs/4.1/examples/sticky-footer/sticky-footer.css" rel="stylesheet">
 	<style>img {float: left;width: 33.33%;padding: 5px;}img::after {content: "";clear: both;display: table;}
-		modal-body{visibility:hidden;}
-		#video{visibility:visible;}
-		@media screen and (min-width: 1366px) and (min-height: 768px) {#video {height:720px!important;width:1280px!important;} }
-	 	@media screen and (min-width: 1152px) and (min-height: 640px) {#video {height:576px!important;width:1024px!important;} }
-	 	@media screen and (min-width: 960px) and (min-height: 540px) {#video {height:480px!important;width:854px!important;} }
-	 	@media screen and (min-width: 720px) and (min-height: 400px) {#video {height:360px!important;width:640px!important;} }
-	 	@media screen and (max-width: 720px) and (max-height: 400px) {#video {height:272px!important;width:480px!important;} }</style>
+		modal-body{visibility:hidden!important;}
+		#video {display:block;margin:auto;visibility:visible!important;}
+		@media only screen and (min-width: 270px) and (min-height: 160px) {#video {width:256px!important;height:144px!important;}}
+		@media only screen and (min-width: 480px) and (min-height: 256px) {#video {width:426px!important;height:240px!important;}}
+		@media only screen and (min-width: 540px) and (min-height: 300px) {#video {width:480px!important;height:272px!important;}}
+		@media only screen and (min-width: 720px) and (min-height: 400px) {#video {width:640px!important;height:360px!important;}}
+		@media only screen and (min-width: 960px) and (min-height: 540px) {#video {width:854px!important;height:480px!important;}}
+		@media only screen and (min-width: 1152px) and (min-height: 600px) {#video {width:1024px!important;height:576px!important;}}
+		@media only screen and (min-width: 1366px) and (min-height: 768px) {#video {width:1280px!important;height:720px!important;}}</style>
 
 	<!--[if lt IE 9]><script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script><script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
 </head>
