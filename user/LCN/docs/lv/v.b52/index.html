@@ -1,0 +1,117 @@
+<head>
+  <meta name="viewport" content="width=600">
+  <title>LCN dokumentācija</title>
+<style>
+body{margin:0;background-color:#000022;font-family:"Verdana Pro",Verdana,Consolas,monospace;}
+.cnt{width:80%;margin:auto;}
+h1, h2, h3, h4, h5, h6 {text-align:center;color:#ED67EA;}  
+li {color:#9292aa;font-size:12px;}
+acc-purp {color:#8a2be2;}
+acc-grbl {color:#b3b3ff;}
+acc-lbrp {color:#b3b3ff;}
+acc-brp {color:#6e6eff;}
+a {color:#8a2be2;}
+.center, center {text-align:center;margin:auto;}
+.nav {display:block;height:20px;background:#000044;position:sticky;top:0px;padding:5px;}
+.nav a {text-decoration:none;color:#9292aa;}
+.nav .langbar {position:sticky;top:0px;display:inline;float:right;}
+.nav a:hover {color:#ed67ea;}
+</style>
+</head>
+<body>
+<div class="nav"><acc-purp><b><acc-grbl>Dokumentācija</acc-grbl></b> | <a href='https://nixieoffset.zfc.id.lv/user/LCN/docs/lv/v.b52/actions'>Darbību ID</a> | <a href='https://nixieoffset.zfc.id.lv/user/LCN/docs/lv/v.b52/setup'>SETUP vērtības</a> | <a href='https://nixieoffset.zfc.id.lv/user/LCN/docs/lv/v.b52/flags'>Flagi komandām</a></acc-purp><div class="langbar"><a href='https://nixieoffset.zfc.id.lv/user/LCN/docs/lv/v.b52'><img src="https://atelier801.com/img/pays/lv.png"/></a> <a href='https://nixieoffset.zfc.id.lv/user/LCN/docs/en/v.b52'><img src="https://atelier801.com/img/pays/gb.png"/></a></div></div>
+<p class="center"></p>
+<div class="cnt">
+<br>
+<h1>#LCN v.b52 dokumentācija</h1>
+<h3>APZĪMĒJUMI</h3>
+<ul>
+<li><acc-brp>[obligāts parametrs]</acc-brp></li>
+<li><acc-lbrp>[neobligāts parametrs]</acc-lbrp></li>
+</ul>
+<br>
+<h3>DALĪBNIEKU KOMANDAS</h3>
+<ul>
+<li>!i<i> - atver iestatījumus</i></li>
+<li>!pr <acc-brp>[vārds]</acc-brp><i> - atver spēlētāja tehnisko profilu</i></li>
+<li>!spawn <acc-brp>[id]</acc-brp><acc-brp>[x]</acc-brp><acc-brp>[y]</acc-brp><acc-grbl>[rotācija]</acc-grbl><acc-grbl>[x paātrinājums]</acc-grbl><acc-grbl>[y paātrinājums]<acc-grbl>[vai ir caurspīdīgs?]</acc-grbl></acc-grbl><i> - izveido objektu</i></li>
+</ul>
+<br>
+<h3>PALĪGU KOMANDAS</h3>
+<ul>
+<li>!bc <acc-lbrp>[teksts]</acc-lbrp><i> - augšējā interfeisā visiem spēlētājiem parāda dzeltenu tekstu (bez HTML)</i></li>
+<li>!ce <acc-brp>[vārds|all]</acc-brp><i> - iedod spēlētājam sieru</i></li>
+<li>!ce* <acc-brp>[vārds|all]</acc-brp><i> - atņem spēlētājam sieru</i></li>
+<li>!clear <i> - notīra mapes objektus</i></li>
+<li>!f <acc-brp>[vārds|all]</acc-brp><i> - sasaldē spēlētāju</i></li>
+<li>!f* <acc-brp>[vārds|all]</acc-brp><i> - atsaldē spēlētāju</i></li>
+<li>!hc <i> - atver HostCore</i></li>
+<li>!meep <acc-brp>[vārds|all]</acc-brp><i> - piešķir spēlētājam meep</i></li>
+<li>!menu <i> - atver izvēlni</i></li>
+<li>!r <acc-brp>[vārds|all]</acc-brp><i> - atdzīvina spēlētāju</i></li>
+<li>!s <acc-brp>[vārds|all]</acc-brp><i> - padara spēlētāju par šamani</i></li>
+<li>!s* <acc-brp>[vārds|all]</acc-brp><i> - noņem šamaņa spējas spēlētājam</i></li>
+<li>!size <acc-brp>[vārds|all][lielums]</acc-brp><i> - maina spēlētāja izmēru</i></li>
+<li>!smode <acc-brp>[vārds|all]</acc-brp><acc-lbrp>[režīms]</acc-lbrp><i> - padara spēlētāju par šamani ar skiliem. Ja norādīts otrais parametrs, mainīs spēlētāja šamaņa režīmu.</i></li>
+</ul>
+<br>
+<h3>VADĪTĀJU KOMANDAS</h3>
+<ul>
+<li>!action <acc-brp>[darbībasID][vārds]</acc-brp><i> - maina spēlētāja piekļuvi spējām</i></li>
+<li>!add <acc-brp>[vārds|all][vērtība]</acc-brp><i> - pieskaita/atņem vērtību spēlētāja esošajiem punktiem scoreboard</i></li>
+<li>!barrier <acc-brp>[daļas][mapes garums]</acc-brp><i> - sadala mapi daļās ar barjerām</i></li>
+<li>!bc* <acc-lbrp>[teksts]</acc-lbrp><i> - augšējā interfeisā visiem spēlētājiem parāda zaļu tekstu (ar HTML)</i></li>
+<li>!c <acc-brp>[režīms]</acc-brp><acc-lbrp>[pkg rotācija]</acc-lbrp><i> - sāk konkursu</i></li>
+<li>!cd <acc-brp>[vārds][fona caurspīdīgums][fona krāsa][ziņojuma x][ziņojuma y]</acc-brp><acc-lbrp>[iemesls]</acc-lbrp><i> - diskvalificē spēlētāju ar pielāgotu diskvalifikācijas interfeisu</i></li>
+<li>!col <acc-brp>[vārdi...|all]</acc-brp><i> - iekrāso spēlētāju vārdus</i></li>
+<li>!d <acc-brp>[vārds]</acc-brp><acc-lbrp>[iemesls]</acc-lbrp><i> - diskvalificē spēlētāju ar skatīšanās iespēju</i></li>
+<li>!d* <acc-brp>[vārds]</acc-brp><acc-lbrp>[iemesls]</acc-lbrp><i> - diskvalificē spēlētāju bez skatīšanās iespējas</i></li>
+<li>!debug <acc-brp>[funkcija]</acc-brp><acc-lbrp>[param1][param2][param3][param4][param5][param6][param7][param8][param9][param10][param11][param12][param13][param14]</acc-lbrp><i> - palaiž koda funkciju, darbojas tikai, ja SETUP.debug ir true.</i></li>
+<li>!defcol <acc-brp>[tags]</acc-brp><i> - definē jaunu HTML krāsu tagu</i></li>
+<li>!end - <i>parāda beigu mapi, beidz konkursu</i></li>
+<li>!end* - <i>parāda beigu mapi un parāda viedokļa logu visiem</i></li>
+<li>!f1 <acc-lbrp>[teksts]</acc-lbrp><i> - sagatavo tekstu fieldui interfeisa 1. laukam</i></li>
+<li>!f2 <acc-lbrp>[teksts]</acc-lbrp><i> - sagatavo tekstu fieldui interfeisa 2. laukam</i></li>
+<li>!f3 <acc-lbrp>[teksts]</acc-lbrp><i> - sagatavo tekstu fieldui interfeisa 3. laukam</i></li>
+<li>!fa <acc-lbrp>[teksts]</acc-lbrp><i> - sagatavo tekstu fieldui interfeisa darbību pogu laukam</i></li>
+<li>!fh <acc-lbrp>[teksts]</acc-lbrp><i> - sagatavo tekstu fieldui interfeisa virsrakstam</i></li>
+<li>!fieldui <acc-lbrp>[single|tricolumn|remove|repmode]</acc-lbrp><i> - ja arguments nav norādīts, tiks lietots noklusējums single.</i><br>
+     ╰ single: <i>parāda viengabalainu logu</i>; tricolumn: <i>parāda trīsdaļīgu logu</i>; remove: <i>aizver logu visiem</i>; repmode: <i>maina atkārtotu !f[?] komandu veikšanas uzvedību starp saistīšanu un pārrakstīšanu.</i></li>
+<li>!fs <acc-lbrp>[teksts]</acc-lbrp><i> - sagatavo tekstu fieldui interfeisa punktu laukam</i></li>
+<li>!g <acc-brp>[id][tips][x][y][platums][augstums]</acc-brp><acc-lbrp>[atsperība][berze][rotācija][ir dinamisks?][masa]</acc-lbrp><i> - izveido necaurejamu zemi</i></li>
+<li>!g* <acc-brp>[id][tips][x][y][platums][augstums]</acc-brp><acc-lbrp>[atsperība][berze][rotācija][ir dinamisks?][masa]</acc-lbrp><i> - izveido caurejamu zemi</i></li>
+<li>!hc <acc-lbrp>[flagi...]</acc-lbrp><i> - atver HostCore</i>
+<li>!hc* <i> - atver HostCore ciļņu režīmā</i></li>
+<li>!kill <acc-brp>[vārds|all]</acc-brp><i> - nogalina spēlētāju</i></li>
+<li>!link <acc-brp>[vārds][vārds2|all]</acc-brp><i> - savieno spēlētājus kā ceļabiedrus</i></li>
+<li>!link* <acc-brp>[vārds][vārds2|all]</acc-brp><i> - atvieno spēlētājus kā ceļabiedrus</i></li>
+<li>!map <acc-lbrp>[mgoc][platums][augstums][fons][zemes tips][krāsa]</acc-lbrp><i> - ielādē pielāgotu mapi</i></li>
+<li>!md <acc-brp>[id][x1][y1][x2][y2]</acc-brp><acc-lbrp>[platums]</acc-lbrp><i> - novelk līniju</i></li>
+<li>!md* <acc-brp>[id][x1][y1][x2][y2][platums][krāsa][caurspīdīgums]</acc-brp><i> - novelk līniju</i></li>
+<li>!mp <acc-lbrp>[mgoc][bluemoon|winter|space|spacelarge]</acc-lbrp><i> - ielādē pielāgota dizaina mapi</i></li>
+<li>!msg <acc-brp>[vārds][ziņa]</acc-brp><i> - nosūta spēlētājam privātu ziņu augšējā interfeisā</i></li>
+<li>!np <acc-brp>[kods]</acc-brp><i> - uzslēdz konkrētu mapi vai nejaušu mapi no kategorijas</i></li>
+<li>!np* <acc-brp>[kods]</acc-brp><i> - uzslēdz spoguļotu konkrētu vai nejaušu mapi no kategorijas</i></li>
+<li>!p <acc-brp>[id][tips][teksts]</acc-brp><i> - parāda lodziņu</i></li>
+<li>!play <acc-brp>[vārds|all][id]</acc-brp><acc-lbrp>[papildus informācija]</acc-lbrp><i> - liek spēlētājam darīt emociju</i></li>
+<li>!r* <acc-brp>[vārds|all]</acc-brp><acc-lbrp>[x][y]</acc-lbrp><i> - atdzīvina spēlētāju konkrētās koordinātās</i></li>
+<li>!rmtxt <acc-brp>[id]</acc-brp><acc-lbrp>[flagi...]</acc-lbrp><i> - noņem tekstlodziņu</i></li>
+<li>!role <acc-brp>[darbība][statuss][vārds]</acc-brp><i> - piešķir/atņem spēlētājam statusu</i></li>
+<li>!score <acc-brp>[vārds|all][vērtība]</acc-brp><i> - nomaina spēlētāja punktus scoreboard uz norādīto vērtību</i></li>
+<li>!settp <acc-brp>[id][x][y]</acc-brp><i> - iestata teleporta vietu</i></li>
+<li>!sname <acc-lbrp>[teksts]</acc-lbrp><i> - maina šamaņa vārdu spēles augšējā informācijas rindā</i></li>
+<li>!sp <acc-brp>[vārdi...]</acc-brp><i> - padara spēlētāju par skatītāju</i></li>
+<li>!spawn* <acc-brp>[skaits][id]</acc-brp><acc-brp>[x]</acc-brp><acc-brp>[y]</acc-brp><acc-grbl>[rotācija]</acc-grbl><acc-grbl>[x paātrinājums]</acc-grbl><acc-grbl>[y paātrinājums]<acc-grbl>[vai ir caurspīdīgs?]</acc-grbl></acc-grbl><i> - izveido objektus masveidā</i></li>
+<li>!startfrom <acc-brp>[raunds]</acc-brp><i> - sāk konkursu no konkrēta raunda</i></li>
+<li>!t <acc-brp>[sekundes]</acc-brp><i> - maina raunda garumu</i></li>
+<li>!test <i>- spēlē survival testa mapi</i></li>
+<li>!tfm <acc-brp>[vārds|all]</acc-brp><i> - piešķir transformēšanās spēju</i></li>
+<li>!tfm* <acc-brp>[vārds|all]</acc-brp><i> - atņem transformēšanās spēju</i></li>
+<li>!tr <acc-brp>[id]</acc-brp><i> - parāda HostCore interfeisā tulkojumu</i></li>
+<li>!txt <acc-brp>[id][x][y][krāsa][teksts]</acc-brp><acc-lbrp>[flagi...]</acc-lbrp><i> - izveido tekstlodziņu</i></li>
+<li>!uc <acc-lbrp>[teksts]</acc-lbrp><i> - apakšējā interfeisā visiem spēlētājiem parāda tekstu (ar HTML)</i></li>
+<li>!uc* <acc-lbrp>[teksts]</acc-lbrp><i> - apakšējā interfeisā visiem spēlētājiem parāda izceltu tekstu (ar HTML)</i></li>
+<li>!userdata <acc-brp>[vārds]</acc-brp><i> - parāda spēlētāja tehnisko informāciju</i></li>
+</ul>
+</div>
+</body>
