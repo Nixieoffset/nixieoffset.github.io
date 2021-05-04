@@ -1,6 +1,25 @@
-<style>body {font-family:"Lucida Console","Courier New",monospace;font-weight:normal;} hil {color:#000096;font-weight:bold;} hil2 {color:#960096;font-weight:bold;} hil:hover {color:#0000f6;} hil2:hover {color:#f600f6;} p{margin-block-start: 1px;margin-block-end: 1px;margin-inline-start: 0px;margin-inline-end: 0px;} p:hover{color:#6a7495;}</style>
+<script>
+function search() {
+  var input, filter, ul, p, item, i, txtValue;
+  input = document.getElementById("searchbar");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("data");
+  p = ul.getElementsByTagName("p");  for (i = 0; i < p.length; i++) {
+    item = p[i];
+    txtValue = item.textContent || item.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      p[i].style.display = "";
+    } else {
+      p[i].style.display = "none";
+    }
+  }
+}
+</script>
+<style>body {font-family:"Lucida Console","Courier New",monospace;font-weight:normal;margin:0;} hil {color:#000096;font-weight:bold;} hil2 {color:#960096;font-weight:bold;} hil:hover {color:#0000f6;} hil2:hover {color:#f600f6;} p{margin-block-start: 1px;margin-block-end: 1px;margin-inline-start: 0px;margin-inline-end: 0px;} p:hover{color:#6a7495;} .nav {display:block;height:40px;background:#324650;position:sticky;top:0px;padding:5px;margin-bottom:20px;} input{width:100%;height:100%;font-size:150%;font-family:"Lucida Console",Consolas;border:0;background-color:transparent;color:#babd2f;} ::placeholder{color:#009d9d;} #data{padding:10px;}</style>
+<div class="nav"><input type="text" id="searchbar" onkeyup="search()" placeholder="🔍 Meklēt..."></div>
 <p>// PĒDĒJOREIZ ATJAUNINĀTS: <hil>04/05/2021, 23:18</hil></p>
 
+<div id="data">
 <p><hil2>[04/05/2021, 22:53]</hil2> Syrius#8114 ir nomainījis cilts mājas kodu: @7610152
 <p><hil2>[03/05/2021, 21:26]</hil2> Syrius#8114 nomainīja Squirrel#7536 ranku uz Secondino.</p>
 <p><hil2>[03/05/2021, 18:51]</hil2> Squirrel#7536 nomainīja Monster2015#0000 ranku uz Societ.</p>
@@ -3525,6 +3544,6 @@
 <p><hil2>[15/05/2017, 22:05]</hil2> Flyrobin ir nomainījis sveiciena ziņu.</p>
 <p><hil2>[15/05/2017, 21:58]</hil2> Flyrobin ir nomainījis cilts mājas kodu: @4994050</p>
 <p><hil2>[15/05/2017, 21:55]</hil2> Flyrobin ir izveidojis cilti La Cros Nostra!</p>
-
+</div>
 <hil>Tu esi sasniedzis faila beigas. Ritini uz augšu.</hil>
 
