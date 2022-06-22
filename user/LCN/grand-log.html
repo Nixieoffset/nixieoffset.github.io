@@ -40,7 +40,7 @@ function searchCase() {
   input = document.getElementById("searchbar");
   filter = input.value.toUpperCase();
   ul = document.getElementById("corps");
-  p = ul.getElementsByTagName("p");  for (i = 0; i < p.length; i++) {
+  p = ul.getElementsByTagName("a");  for (i = 0; i < p.length; i++) {
     item = p[i];
     txtValue = item.textContent || item.innerText;
     if (txtValue.toUpperCase().indexOf(filter) > -1) {
