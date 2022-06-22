@@ -1,6 +1,7 @@
 <head>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
+  <script src="/user/LCN/resources/jsmod/js/jsmodal-1.0d.min.js"></script>    
+<script>		
 function search() {
   var input, filter, ul, p, item, i, txtValue;
   input = document.getElementById("searchbar");
@@ -35,11 +36,14 @@ function searchName() {
 }
 
 function searchCase() {
-  jQuery('#cases').load('https://atelier801.com/section?f=774444&s=891112');
+  Modal.open({
+    ajaxContent: 'https://atelier801.com/section?f=774444&s=891112',
+    draggable: true,
+  });
   var input, filter, ul, p, item, i, txtValue;
   input = document.getElementById("searchbar");
   filter = input.value.toUpperCase();
-  ul = document.getElementById("corps");
+  ul = document.getElementById("modal-container");
   p = ul.getElementsByTagName("a");  for (i = 0; i < p.length; i++) {
     item = p[i];
     txtValue = item.textContent || item.innerText;
@@ -52,7 +56,7 @@ function searchCase() {
 }
 </script>
 <style>		body {
-  background: #2b2b2b;
+  background: #100e0e;
   font-family: "Lucida Console","Courier New",monospace;
   font-weight: normal;
   margin: 0;
@@ -92,12 +96,13 @@ p:hover {
 .nav {
   display: block;
   height: 40px;
-  background: #242323;
+  background: #141313;
   position: sticky;
   top: 0px;
   padding: 5px;
   margin-bottom: 20px;
   padding-left: 10px;
+  margin: 10px;
 }
 
 input {
@@ -129,7 +134,7 @@ h2 {
 .sidebar {
   width: 250px;
   height: 100%;
-  background-color: #1c1b1b;
+  background-color: #080808;
   position: fixed;
   left: 0;
   top: 0;
