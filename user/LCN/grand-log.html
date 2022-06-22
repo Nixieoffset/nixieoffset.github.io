@@ -1,7 +1,8 @@
 <head>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="/user/LCN/resources/jsmod/js/jsmodal-1.0d.min.js"></script>    
-<script>		
+<script>	
+jQuery('#names').load('/user/LCN/resources/nicksrc');
 function search() {
   var input, filter, ul, p, item, i, txtValue;
   input = document.getElementById("searchbar");
@@ -19,32 +20,11 @@ function search() {
 }
 
 function searchName() {
-  jQuery('#names').load('/user/LCN/resources/nicksrc');
   var input, filter, ul, p, item, i, txtValue;
   input = document.getElementById("searchbar");
   filter = input.value.toUpperCase();
   ul = document.getElementById("names");
   p = ul.getElementsByTagName("p");  for (i = 0; i < p.length; i++) {
-    item = p[i];
-    txtValue = item.textContent || item.innerText;
-    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-      p[i].style.display = "";
-    } else {
-      p[i].style.display = "none";
-    }
-  }
-}
-
-function searchCase() {
-  Modal.open({
-    ajaxContent: 'https://atelier801.com/section?f=774444&s=891112',
-    draggable: true,
-  });
-  var input, filter, ul, p, item, i, txtValue;
-  input = document.getElementById("searchbar");
-  filter = input.value.toUpperCase();
-  ul = document.getElementById("modal-container");
-  p = ul.getElementsByTagName("a");  for (i = 0; i < p.length; i++) {
     item = p[i];
     txtValue = item.textContent || item.innerText;
     if (txtValue.toUpperCase().indexOf(filter) > -1) {
@@ -148,7 +128,7 @@ h2 {
   right: 0;
 }
 
-button {
+button, .btn {
 	margin: 5px 10px;
 	padding: 5px;
 	background-color: #0e0e0e;
@@ -158,7 +138,7 @@ button {
 	border: 0px;
 }
 
-button:hover {
+button:hover, .btn:hover {
 	text-shadow: #de1407 0 0 6px;
 	background-color: #161616;
 }
@@ -183,11 +163,11 @@ button:hover {
     <img src="/user/LCN/resources/lacrosnostra-sq-dark-360p.png">
   </div>
   <div class="actions">
-	  <button onclick="searchName()">🔍 Meklēt vēsturiskos vārdus</button>
-    <button onclick="searchCase()">🔍 Meklēt personas lietu</button>
+	<button onclick="searchName()">🔍 Meklēt vēsturiskos vārdus</button>
+    	<a class="btn" href="https://atelier801.com/section?f=774444&s=891112">🗄️ Personas lietas</button>
 	</div>
   <div class="returns">
-    <div id="names"></div><div id="cases"></div>
+    <div id="names"></div>
   </div>
 </div>
 <div class="main">
