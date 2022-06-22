@@ -20,17 +20,17 @@ function search() {
 }
 
 function searchName() {
-  var input, filter, ul, p, item, i, txtValue;
+  var input, filter, ul, k, item, i, txtValue;
   input = document.getElementById("searchbar");
   filter = input.value.toUpperCase();
   ul = document.getElementById("names");
-  p = ul.getElementsByTagName("p");  for (i = 0; i < p.length; i++) {
-    item = p[i];
+  k = ul.getElementsByTagName("p");  for (i = 0; i < k.length; i++) {
+    item = k[i];
     txtValue = item.textContent || item.innerText;
     if (txtValue.toUpperCase().indexOf(filter) > -1) {
-      p[i].style.display = "";
+      k[i].style.display = "";
     } else {
-      p[i].style.display = "none";
+      k[i].style.display = "none";
     }
   }
 }
