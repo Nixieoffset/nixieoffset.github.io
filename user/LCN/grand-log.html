@@ -1,4 +1,5 @@
 <head>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
 function search() {
   var input, filter, ul, p, item, i, txtValue;
@@ -15,34 +16,193 @@ function search() {
     }
   }
 }
+
+function searchName() {
+  jQuery('#names').load('/user/LCN/resources/nicksrc');
+  var input, filter, ul, p, item, i, txtValue;
+  input = document.getElementById("searchbar");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("names");
+  p = ul.getElementsByTagName("p");  for (i = 0; i < p.length; i++) {
+    item = p[i];
+    txtValue = item.textContent || item.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      p[i].style.display = "";
+    } else {
+      p[i].style.display = "none";
+    }
+  }
+}
+
+function searchCase() {
+  jQuery('#cases').load('https://atelier801.com/section?f=774444&s=891112');
+  var input, filter, ul, p, item, i, txtValue;
+  input = document.getElementById("searchbar");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("corps");
+  p = ul.getElementsByTagName("p");  for (i = 0; i < p.length; i++) {
+    item = p[i];
+    txtValue = item.textContent || item.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      p[i].style.display = "";
+    } else {
+      p[i].style.display = "none";
+    }
+  }
+}
 </script>
-<style>body {background:#2b2b2b;font-family:"Lucida Console","Courier New",monospace;font-weight:normal;margin:0;color:#C2C2DA} hil {color:#F54605;font-weight:bold;} hil2 {color:#de1407;font-weight:bold;} hil:hover {color:#FF7000;text-shadow:#FF7000 0 0 6px} hil2:hover {text-shadow:#fe0000 0 0 6px;color:#fe0000;} p{margin-block-start: 1px;margin-block-end: 1px;margin-inline-start: 0px;margin-inline-end: 0px;-webkit-margin-before:1px;-webkit-margin-after:1px;} p:hover{text-shadow:#dedede 0 0 6px;color:#dedede;} .nav {display:block;height:40px;background:#242323;position:sticky;top:0px;padding:5px;margin-bottom:20px;padding-left:10px;} input{width:100%;height:100%;font-size:150%;font-family:"Lucida Console","Courier New",monospace;border:0;background-color:transparent;color:#F54605;} ::placeholder{color:#de1407;} #data{padding:10px;} h2{color:#de1407;font-weight:bold;font-size:150%;font-family:"Lucida Console","Courier New",monospace;border:0;}
-  .sidebar {
-    width: 250px;
-    height: 100%;
-    background-color: #1c1b1b;
-    position: fixed;
-    left: 0;
-    top: 0;
-    display: block;
-    z-index: 2;
+<style>		body {
+  background: #2b2b2b;
+  font-family: "Lucida Console","Courier New",monospace;
+  font-weight: normal;
+  margin: 0;
+  color: #C2C2DA
+}
+
+hil {
+  color: #F54605;
+  font-weight: bold;
+}
+
+hil2 {
+  color: #de1407;
+  font-weight: bold;
+}
+
+hil:hover {
+  color: #FF7000;
+  text-shadow: #FF7000 0 0 6px
+}
+
+hil2:hover {
+  text-shadow: #fe0000 0 0 6px;
+  color: #fe0000;
+}
+
+p {
+  margin-block-start: 1px;margin-block-end: 1px;margin-inline-start: 0px;margin-inline-end: 0px;-webkit-margin-before: 1px;
+  -webkit-margin-after: 1px;
+}
+
+p:hover {
+  text-shadow: #dedede 0 0 6px;
+  color: #dedede;
+}
+
+.nav {
+  display: block;
+  height: 40px;
+  background: #242323;
+  position: sticky;
+  top: 0px;
+  padding: 5px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+
+input {
+  width: 100%;
+  height: 100%;
+  font-size: 150%;
+  font-family: "Lucida Console","Courier New",monospace;
+  border: 0;
+  background-color: transparent;
+  color: #F54605;
+}
+
+::placeholder {
+  color: #de1407;
+}
+
+#data {
+  padding: 10px;
+}
+
+h2 {
+  color: #de1407;
+  font-weight: bold;
+  font-size: 150%;
+  font-family: "Lucida Console","Courier New",monospace;
+  border: 0;
+}
+
+.sidebar {
+  width: 250px;
+  height: 100%;
+  background-color: #1c1b1b;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: block;
+  z-index: 2;
 }
 
 .main {
-    width: calc(100% - 250px);
-    position: absolute;
-    right: 0;
+  width: calc(100% - 250px);
+  position: absolute;
+  right: 0;
 }
+
+button {
+	margin: 5px 10px;
+	padding: 5px;
+	background-color: #0e0e0e;
+	color: #de1407;
+	font-family: "Lucida Console";
+	width: calc(100% - 20px);
+	border: 0px;
+}
+
+button:hover {
+	text-shadow: #de1407 0 0 6px;
+	background-color: #161616;
+}
+
+.actions {
+	margin-top: 5px;
+}
+
+.returns {
+	font-size: 10px;
+	font-family: Verdana;
+	margin: 10px;
+}
+
+.logo img {width: 200px;margin: 10px 25px 0 25px;}
+
 </style>
 </head>
 <body>
-<div class="sidebar"></div>
+<div class="sidebar">
+	<div class="logo">
+    <img src="/user/LCN/resources/lacrosnostra-sq-dark-360p.png">
+  </div>
+  <div class="actions">
+	  <button onclick="searchName()">🔍 Meklēt vēsturiskos vārdus</button>
+    <button onclick="searchCase()">🔍 Meklēt personas lietu</button>
+	</div>
+  <div class="returns">
+    <div id="names"></div><div id="cases"></div>
+  </div>
+</div>
 <div class="main">
 <div class="nav"><input type="text" id="searchbar" onkeyup="search()" placeholder="🔍 Meklēt..."></div>
-<p>// PĒDĒJOREIZ ATJAUNINĀTS: <hil>08/06/2022, 19:55</hil></p>
+<p>// PĒDĒJOREIZ ATJAUNINĀTS: <hil>22/06/2022, 18:39</hil></p>
 <p><hil2>Saskaņā ar LCN personāla likvidāciju, šis rīks vairs NETIEK atjaunināts.</hil2></p>
 
 <div id="data">
+<p><hil2>[17/06/2022, 15:04]</hil2> Diablo#3932 ir pametis cilti</p>
+<p><hil2>[07/06/2022, 14:36]</hil2> Neon_ish#5075 ir pametis cilti</p>
+<p><hil2>[02/06/2022, 17:50]</hil2> Syrius#8114 nomainīja Diablo#3932 ranku uz Societ.</p>
+<p><hil2>[27/05/2022, 14:45]</hil2> Diablo#3932 pievienojās ciltij pateicoties Pro20#0439.</p>
+<p><hil2>[26/05/2022, 19:16]</hil2> Syrius#8114 nomainīja Pro20#0439 ranku uz Societ.</p>
+<p><hil2>[26/05/2022, 19:16]</hil2> Pro20#0439 pievienojās ciltij pateicoties Syrius#8114.</p>
+<p><hil2>[13/05/2022, 15:14]</hil2> Syrius#8114 nomainīja Mmmmmmmmmmmmmmm#1234 ranku uz Societ.</p>
+<p><hil2>[13/05/2022, 15:14]</hil2> Mmmmmmmmmmmmmmm#1234 pievienojās ciltij pateicoties Syrius#8114.</p>
+<p><hil2>[24/04/2022, 16:10]</hil2> Edgars#0000 ir pametis cilti</p>
+<p><hil2>[02/03/2022, 17:47]</hil2> Syrius#8114 ir nomainījis cilts mājas kodu: @7610152</p>
+<p><hil2>[02/03/2022, 17:42]</hil2> Syrius#8114 ir nomainījis cilts mājas kodu: @7684075</p>
+<p><hil2>[02/03/2022, 17:22]</hil2> Syrius#8114 ir nomainījis cilts mājas kodu: @7610152</p>  
 <p><hil2>[03/02/2022, 00:07]</hil2> +Ntw#0000 ir pametis cilti</p>
 <p><hil2>[21/01/2022, 10:42]</hil2> Panzer#7519 ir pametis cilti</p>
 <p><hil2>[30/11/2021, 17:16]</hil2> Syrius#8114 ir nomainījis cilts mājas kodu: @7667415</p>
