@@ -4,7 +4,7 @@
 <script>	
 jQuery('#names').load('/user/LCN/resources/nicksrc');
 function search() {
-  var input, filter, ul, p, item, i, txtValue;
+  let input, filter, ul, p, item, i, txtValue;
   input = document.getElementById("searchbar");
   filter = input.value.toUpperCase();
   ul = document.getElementById("data");
@@ -20,20 +20,29 @@ function search() {
 }
 
 function searchName() {
-  var input, filter, ul, k, item, i, txtValue;
+  let input, filter, ul, p, item, i, txtValue;
   input = document.getElementById("searchbar");
   filter = input.value.toUpperCase();
   ul = document.getElementById("names");
-  k = ul.getElementsByTagName("p");  for (i = 0; i < k.length; i++) {
-    item = k[i];
+  p = ul.getElementsByTagName("p");  for (i = 0; i < p.length; i++) {
+    item = p[i];
     txtValue = item.textContent || item.innerText;
     if (txtValue.toUpperCase().indexOf(filter) > -1) {
-      k[i].style.display = "";
+      p[i].style.display = "";
     } else {
-      k[i].style.display = "none";
+      p[i].style.display = "none";
     }
   }
 }
+	
+var fontSizeInEm = 1;
+
+function smallerSize() {fontSizeInEm = fontSizeInEm - 0.05; 
+$('p').css('font-size', fontSizeInEm + "em");)}
+	
+function biggerSize() {fontSizeInEm = fontSizeInEm + 0.05; 
+$('p').css('font-size', fontSizeInEm + "em");}
+	
 </script>
 <style>		body {
   background: #100e0e;
@@ -136,6 +145,9 @@ button, .btn {
 	font-family: "Lucida Console";
 	width: calc(100% - 20px);
 	border: 0px;
+	text-decoration: none;
+	text-align: center;
+	font-size: 12.5px;
 }
 
 button:hover, .btn:hover {
@@ -145,6 +157,8 @@ button:hover, .btn:hover {
 
 .actions {
 	margin-top: 5px;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .returns {
@@ -152,6 +166,9 @@ button:hover, .btn:hover {
 	font-family: Verdana;
 	margin: 10px;
 }
+
+.col2 {width: calc(50% - 15px);margin: 5px;left: 5px;position: relative;}
+
 
 .logo img {width: 200px;margin: 10px 25px 0 25px;}
 
@@ -164,8 +181,8 @@ button:hover, .btn:hover {
   </div>
   <div class="actions">
 	<button onclick="searchName()">🔍 Meklēt vēsturiskos vārdus</button>
-    	<a class="btn" href="https://atelier801.com/section?f=774444&s=891112">🗄️ Personas lietas</button>
-	</div>
+    	<a class="btn" href="https://atelier801.com/section?f=774444&s=891112">🗄️ Personas lietas</a>
+	<button class="col2" onclick="smallerSize()">➖ Mazāks</button>	<button onclick="biggerSize()" class="col2">➕ Lielāks</button></div>
   <div class="returns">
     <div id="names"></div>
   </div>
