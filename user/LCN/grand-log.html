@@ -2,7 +2,6 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="/user/LCN/resources/jsmod/js/jsmodal-1.0d.min.js"></script>    
 <script>	
-jQuery('#names').load('/user/LCN/resources/nicksrc');
 function search() {
   let input, filter, ul, p, item, i, txtValue;
   input = document.getElementById("searchbar");
@@ -20,6 +19,7 @@ function search() {
 }
 
 function searchName() {
+  jQuery('#names').load('/user/LCN/resources/nicksrc');
   let input, filter, ul, p, item, i, txtValue;
   input = document.getElementById("searchbar");
   filter = input.value.toUpperCase();
