@@ -19,7 +19,6 @@ function search() {
 }
 
 function searchName() {
-  jQuery('#names').load('/user/LCN/resources/nicksrc');
   let input, filter, ul, p, item, i, txtValue;
   input = document.getElementById("searchbar");
   filter = input.value.toUpperCase();
@@ -184,7 +183,7 @@ button:hover, .btn:hover {
     	<a class="btn" href="https://atelier801.com/section?f=774444&s=891112">🗄️ Personas lietas</a>
 	<button class="col2" onclick="smallerSize()">➖ Mazāks</button>	<button onclick="biggerSize()" class="col2">➕ Lielāks</button></div>
   <div class="returns">
-    <div id="names"></div>
+    <div id="names" onload="jQuery('#names').load('/user/LCN/resources/nicksrc');"></div>
   </div>
 </div>
 <div class="main">
