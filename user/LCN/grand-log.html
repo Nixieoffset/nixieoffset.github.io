@@ -1,6 +1,7 @@
 <head>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="/user/LCN/resources/jsmod/js/jsmodal-1.0d.min.js"></script>    
+  <title>LCN reģistri</title>
 <script>	
 function search() {
   let input, filter, ul, p, item, i, txtValue;
@@ -41,7 +42,60 @@ $('p').css('font-size', fontSizeInEm + "em");}
 	
 function biggerSize() {fontSizeInEm = fontSizeInEm + 0.05; 
 $('p').css('font-size', fontSizeInEm + "em");}
-	
+
+var ids = {
+  left: "ir pametis",
+  rank: "ranku uz",
+  greeting: "sveiciena",
+  tribehouse: "@",
+  join: "pateicoties",
+  kick: "izslēdza",
+  create: "izveidojis cilti"
+};
+
+var init = false;
+var states = {};
+
+function advancedViewInit() {
+  let i, item, txtvalue;
+  let data = document.getElementById("data");
+  let p = data.getElementsByTagName("p");
+  let btn = document.getElementById("btn-advancedView");
+  btn.setAttribute("disabled",true)
+  let toolbar = document.getElementById("tools"); toolbar.classList.remove("hidden");
+  for (i = 0; i < p.length; i++) {
+    item = p[i];
+    txtvalue = item.textContent || item.innerText;
+    for (let k in ids) {
+      if (txtvalue.match(ids[k])) {
+        item.classList.add("style-" + k);
+      }
+    }
+  }
+}
+
+function advancedView() {
+  if (!init) {
+    advancedViewInit();
+    init = true;
+  }
+  let i, item, txtvalue;
+  for (let k in ids) {
+    states[k] = $("#view-" + k).is(":checked")
+  }
+  let data = document.getElementById("data");
+  for (let K in states) {
+    states[K + 'list'] = data.getElementsByClassName('style-' + K);
+    for (i = 0; i < states[K + 'list'].length; i++) {
+      item = states[K + 'list'][i];
+      if (!states[K]) {
+        item.classList.add("hidden");
+      } else {
+        item.classList.remove("hidden");
+      }
+    }
+  }
+}
 </script>
 <style>		body {
   background: #100e0e;
@@ -93,7 +147,7 @@ p:hover {
   margin: 10px;
 }
 
-input {
+.nav input {
   width: 100%;
   height: 100%;
   font-size: 150%;
@@ -166,11 +220,84 @@ button:hover, .btn:hover {
 	margin: 10px;
 }
 
-.col2 {width: calc(50% - 15px);margin: 5px;left: 5px;position: relative;}
+.tools {
+    position: fixed;
+    top: 25px;
+    left: calc(100% - 140px);
+}
 
+button[disabled], .btn[disabled] {
+    color: #de140760;
+    background-color: #0e0e0e60;
+}
+
+button[disabled]:hover, .btn[disabled]:hover {
+    text-shadow: none;
+}
+	
+.col2 {width: calc(50% - 15px);margin: 5px;left: 5px;position: relative;}
 
 .logo img {width: 200px;margin: 10px 25px 0 25px;}
 
+.style-join {
+  color: hsl(100, 75%, 75%);
+}
+
+.style-join hil2 {
+  color: hsl(100, 100%, 50%);
+}
+
+.style-rank {
+  color: hsl(270, 75%, 80%);
+}
+
+.style-rank hil2 {
+  color: hsl(270, 100%, 70%);
+}
+
+.style-tribehouse {
+  color: hsl(180, 75%, 75%);
+}
+
+.style-tribehouse hil2 {
+  color: hsl(180, 100%, 50%);
+}
+
+.style-kick {
+  color: hsl(60, 75%, 75%);
+}
+
+.style-kick hil2 {
+  color: hsl(60, 100%, 50%);
+}
+
+.style-greeting {
+  color: hsl(220, 75%, 75%);
+}
+
+.style-greeting hil2 {
+  color: hsl(220, 100%, 70%);
+}
+
+.style-left {
+  color: hsl(340, 75%, 75%);
+}
+
+.style-left hil2 {
+  color: hsl(340, 100%, 50%);
+}
+
+.style-create {
+  color: hsl(75, 0%, 75%);
+}
+
+.style-create hil2 {
+  color: hsl(75, 0%, 100%);
+}
+
+.hidden {
+  display: none;
+}
 </style>
 </head>
 <body>
@@ -181,10 +308,20 @@ button:hover, .btn:hover {
   <div class="actions">
 	<button onclick="searchName()">🔍 Meklēt vēsturiskos vārdus</button>
     	<a class="btn" href="https://atelier801.com/section?f=774444&s=891112">🗄️ Personas lietas</a>
+	<button id="btn-advancedView" onclick="advancedView()">🔧 Pielāgot skatu</button>
 	<button class="col2" onclick="smallerSize()">➖ Mazāks</button>	<button onclick="biggerSize()" class="col2">➕ Lielāks</button></div>
   <div class="returns">
-    <div id="names" onload="jQuery('#names').load('/user/LCN/resources/nicksrc');"></div>
+    <div id="names"></div>
   </div>
+  <div class="tools hidden" id="tools">
+	<input id="view-left" onclick="advancedView()" type="checkbox" checked style="accent-color: hsl(340, 100%, 50%);">
+	<input id="view-rank" onclick="advancedView()" type="checkbox" checked style="accent-color: hsl(270, 100%, 70%);">
+	<input id="view-greeting" onclick="advancedView()" type="checkbox" checked style="accent-color: hsl(220, 100%, 70%);">
+	<input id="view-tribehouse" onclick="advancedView()" type="checkbox" checked style="accent-color: hsl(180, 100%, 50%);">
+	<input id="view-join" onclick="advancedView()" type="checkbox" checked style="accent-color: hsl(100, 100%, 50%);">
+	<input id="view-kick" onclick="advancedView()" type="checkbox" checked style="accent-color: hsl(60, 100%, 50%);">
+	<input id="view-create" type="checkbox" checked class="hidden"> 
+  </div>	  
 </div>
 <div class="main">
 <div class="nav"><input type="text" id="searchbar" onkeyup="search()" placeholder="🔍 Meklēt..."></div>
@@ -3793,3 +3930,4 @@ button:hover, .btn:hover {
 </div>
 <hil>Tu esi sasniedzis faila beigas. Ritini uz augšu.</hil>
 </div>
+<script>jQuery('#names').load('/user/LCN/resources/nicksrc');</script>
